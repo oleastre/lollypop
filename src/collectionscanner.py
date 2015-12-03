@@ -233,7 +233,7 @@ class CollectionScanner(GObject.GObject, ScannerTagReader):
         (artist_ids, new_artist_ids) = self.add_artists(artists,
                                                         album_artist,
                                                         sortname)
-        (album_artist_id, new) = self.add_album_artist(album_artist)
+        (album_artist_id, new) = self.add_album_artist(album_artist, sortname)
         if new:
             new_artist_ids.append(album_artist_id)
 
